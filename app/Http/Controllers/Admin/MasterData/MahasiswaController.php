@@ -36,7 +36,8 @@ class MahasiswaController extends Controller
 
     public function create()
     {
-        return view('admin.master-data.mahasiswa.create', ['list_prodi' => Prodi::all()]);
+        // return view('admin.master-data.mahasiswa.create', ['list_prodi' => Prodi::all()]);
+        return view('admin.master-data.mahasiswa.create');
     }
 
     public function store()
