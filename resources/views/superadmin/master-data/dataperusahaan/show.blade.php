@@ -1,4 +1,5 @@
 <x-module.superadmin>
+
     <x-template.button.back-button url="superadmin/master-data/dataperusahaan" />
     <div class="card">
         <div class="card-header">
@@ -29,4 +30,5 @@
             </div>
         </div>
     </div>
+    
 </x-module.superadmin>
