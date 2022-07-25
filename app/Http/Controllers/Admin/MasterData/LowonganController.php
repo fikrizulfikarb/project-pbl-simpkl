@@ -24,7 +24,7 @@ class LowonganController extends Controller
         $data['lowongan'] = $lowongan;
         $data['pegawai'] = auth()->user();
         $data['list_daftarlowongan'] = Daftarlowongan::all();
-        $data['list_dataperusahaan'] = Dataperusahaan::all();
+        // $data['list_dataperusahaan'] = Dataperusahaan::all();
         return view('admin.master-data.lowongan.show', $data);
 
     }
