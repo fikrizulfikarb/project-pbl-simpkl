@@ -40,7 +40,7 @@ class MahasiswaController extends Controller
     {
         // $data['list_prodi'] = Prodi::all();
         $data['list_tahunajaran'] = Tahunajaran::all();
-        return view('superadmin.master-data.mahasiswa.create', ['list_prodi' => Prodi::all()], $data);
+        return view('superadmin.master-data.mahasiswa.create', $data);
     }
 
     public function store()
