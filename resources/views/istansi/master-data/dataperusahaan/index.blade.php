@@ -10,8 +10,6 @@
             <div class="card-title">
                 Data Perusahaan
             </div>
-            <a href="{{ url('istansi/master-data/dataperusahaan/create') }}" class="btn btn-dark float-right"><i
-                    class="fas fa-plus"></i> Tambah Data</a>
         </div>
         <div class="card-body">
             <table id="example1" class="table table-bordered table-striped">
@@ -32,7 +30,7 @@
                             <td>
                                 <div class="btn-group">
                                     <x-template.button.info-button url="istansi/master-data/dataperusahaan"
-                                        id="{{ $dataperusahaan->id }}"  title="detail"/>
+                                        id="{{ $dataperusahaan->id }}"  title="lihat detail"/>
                                     {{-- <x-template.button.edit-button url="istansi/master-data/dataperusahaan"
                                         id="{{ $dataperusahaan->id }}"/>
                                     <x-template.button.delete-button url="istansi/master-data/dataperusahaan"
