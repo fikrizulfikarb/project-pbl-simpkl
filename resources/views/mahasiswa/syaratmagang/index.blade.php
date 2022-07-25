@@ -30,7 +30,7 @@
                                 <td>
                                     <div class="btn-group">
                                         <a href="" target="popup"
-                                            onclick="window.open (' url({{ url( $syaratmagang->syarat_magang ) }}) ','popup','width=800,height=600'); return false;"
+                                            onclick="window.open (' url({{ url( '$syaratmagang->syarat_magang') }}) ','popup','width=800,height=600'); return false;"
                                             class="btn btn-dark"><i class="fas fa-eye"></i> Lihat</a>
                                     </div>
                                 </td>
