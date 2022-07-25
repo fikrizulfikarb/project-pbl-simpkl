@@ -20,7 +20,7 @@
                     <th width="100px">Aksi</th>
                     <th>Nama</th>
                     <th>Alamat</th>
-                    <th>Kuota</th>
+                    <th>Bergerak DiBidang</th>
                 </thead>
                 <tbody>
                     @foreach ($list_dataperusahaan as $dataperusahaan)
@@ -38,7 +38,7 @@
                             </td>
                             <td>{{ $dataperusahaan->nama_perusahaan }}</td>
                             <td>{{ $dataperusahaan->alamat}}</td>
-                            <td>{{ 0 }}</td>
+                            <td>{{  $dataperusahaan->keterangan }}</td>
                         </tr>
                     @endforeach
                 </tbody>
