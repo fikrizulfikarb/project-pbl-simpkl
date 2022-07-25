@@ -3,8 +3,8 @@
 namespace App\Models\SuperAdmin\MasterData;
 use App\Models\SuperAdmin\MasterData\Jurusan;
 use App\Models\Instansi\MasterData\Lowongan;
-use App\Models\Model;
 use App\Models\SuperAdmin\MasterData\Pegawai;
+use App\Models\Model;
 
 use App\Models\ModelAuthenticate;
 
