@@ -65,6 +65,7 @@ Route::post('store-daftar-lowongan', [LowonganController::class, 'daftar']);
 Route::put('setuju/{id}', [MasterDataLowonganController::class, 'setuju']);
 Route::put('ditolak/{id}', [MasterDataLowonganController::class, 'ditolak']);
 Route::put('dipulihkan/{id}', [MasterDataLowonganController::class, 'dipulihkan']);
+Route::put('dihapus/{id}', [MasterDataLowonganController::class, 'dihapus']);
 
 
 Route::post('store-lowongan', [DataperusahaanController::class, 'storelowongan']);

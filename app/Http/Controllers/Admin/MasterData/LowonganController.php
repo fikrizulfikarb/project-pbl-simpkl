@@ -89,4 +89,11 @@ class LowonganController extends Controller
         return back()->with('success', 'Pengajuan Dipulihkan');
     }
 
+    public function dihapus($id)
+    {
+        $lowongan = Daftarlowongan::find($id);
+        $lowongan->delete();
+        
+        return back()->with('danger', 'Pengajuan Dihapus');
+    }
 }

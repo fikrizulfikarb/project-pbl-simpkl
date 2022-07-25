@@ -130,9 +130,9 @@
                                                         <button class="btn btn-warning btn-sm"><i class="fas fa-history"></i>
                                                             Batal</button>
                                                     </form>
-                                                    <form action="{{ url('ditolak', $daftarlowongan->id) }}"
+                                                    <form action="{{ url('dihapus', $daftarlowongan->id) }}"
                                                         method="post"
-                                                        onsubmit="return confirm('Yakin ingin menolak pengajuan ini?')">
+                                                        onsubmit="return confirm('Yakin ingin menghapus pengajuan ini?')">
                                                         @csrf
                                                         @method('put')
                                                         <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i>
