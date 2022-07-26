@@ -50,7 +50,7 @@
                         @foreach ($list_syaratmagang as $syaratmagang)
                             @if ($syaratmagang->id_mahasiswa == $mahasiswa->id)
                                 <dl class="col-md-12"><a href="" target="popup"
-                                        onclick="window.open('{{ url($mahasiswa->syarat->syarat_magang) }}','popup','width=800,height=600'); return false;"
+                                        onclick="window.open (' url({{ url( '$syaratmagang->syarat_magang') }}) ','popup','width=800,height=600'); return false;"
                                         class="btn btn-dark"><i class="fas fa-download"></i> Semester
                                         {{ $syaratmagang->krs_semester }}</a>
                                 </dl>
