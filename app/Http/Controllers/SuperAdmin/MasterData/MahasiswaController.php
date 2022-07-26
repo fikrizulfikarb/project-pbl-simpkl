@@ -75,7 +75,7 @@ class MahasiswaController extends Controller
 
         $data['mahasiswa'] = $mahasiswa;
         $data['list_tahunajaran'] = Tahunajaran::all();
-        $data['list_prodi'] = Prodi::all();
+        // $data['list_prodi'] = Prodi::all();
         $data['list_syaratmagang'] = Syaratmagang::all();
         return view('superadmin.master-data.mahasiswa.show', $data);
     }
