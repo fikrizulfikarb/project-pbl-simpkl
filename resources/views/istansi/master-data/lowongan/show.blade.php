@@ -1,5 +1,34 @@
 <x-module.istansi>
 
+    <x-template.button.back-button url="istansi/master-data/lowongan" />
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                Data Perusahaan
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5">
+                    <dl class="row">
+                        <dt class="col-md-4">Nama</dt>
+                        <dl class="col-md-8">{{ $lowongan->perusahaan->nama_perusahaan }}</dl>
+                        <dt class="col-md-4">alamat</dt>
+                        <dl class="col-md-8">{{ $lowongan->perusahaan->alamat }}</dl>
+                        <dt class="col-md-4">Telp</dt>
+                        <dl class="col-md-8">{{ $lowongan->perusahaan->no_handphone }}</dl>
+                        <dt class="col-md-4">Email</dt>
+                        <dl class="col-md-8">{{ $lowongan->perusahaan->email }}</dl>
+                        <dt class="col-md-4">Keterangan</dt>
+                        <dl class="col-md-8">{{ $lowongan->perusahaan->keterangan }}</dl>
+                        <dt class="col-md-4">Bidang Magang</dt>
+                        <dl class="col-md-8">{{ $lowongan->bidang }}</dl>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- <div class="content">
         <div class="container-fluid">
             <div class="row">
