@@ -21,7 +21,7 @@
                     <th>NIM</th>
                     <th>Nama</th>
                     <th>Jenis Kelamin</th>
-                    {{-- <th>Prodi</th> --}}
+                    <th>Prodi</th>
                     <th>Angkatan</th>
                 </thead>
                 <tbody>
@@ -44,7 +44,7 @@
                             <td>{{ $mahasiswa->nim }}</td>
                             <td>{{ $mahasiswa->nama }}</td>
                             <td>{{ $mahasiswa->jenis_kelamin }}</td>
-                            {{-- <td>{{ $mahasiswa->prodi->nama_prodi }}</td> --}}
+                            <td>{{ $mahasiswa->prodi->nama_prodi }}</td>
                             <td>{{ $mahasiswa->tahunajaran->tahun_ajaran }}</td>
                         </tr>
                     @endforeach
