@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin\MasterData;
 
 use App\Http\Controllers\Controller;
 use App\Models\SuperAdmin\MasterData\Pegawai;
-use App\Models\Superadmin\MasterData\Prodi;
+use App\Models\SuperAdmin\MasterData\Prodi;
 
 class PegawaiController extends Controller
 {
