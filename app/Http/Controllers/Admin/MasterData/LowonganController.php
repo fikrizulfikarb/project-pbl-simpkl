@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Instansi\MasterData\Lowongan;
 use App\Models\Mahasiswa\Daftarlowongan;
-use App\Models\Superadmin\MasterData\Dataperusahaan;
+use App\Models\SuperAdmin\MasterData\Dataperusahaan;
 use App\Models\Superadmin\MasterData\Prodi;
 
 class LowonganController extends Controller
