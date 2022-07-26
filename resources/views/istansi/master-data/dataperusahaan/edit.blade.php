@@ -1,5 +1,5 @@
-<x-module.istansi>
+<x-module.istans>
 
 
 
-</x-module.istansi>
+</x-module.istans>

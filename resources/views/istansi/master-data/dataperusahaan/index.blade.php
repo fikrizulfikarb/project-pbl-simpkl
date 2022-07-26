@@ -1,9 +1,7 @@
 <x-module.istansi>
 
-    <div class="card-header py-2">
         <h5 class="m-0 font-weight-bold text-dark" style="text-align:center; font-size: 25px"> Data Perusahaan
         </h5>
-    </div>
 
     <div class="card">
         <div class="card-header">
