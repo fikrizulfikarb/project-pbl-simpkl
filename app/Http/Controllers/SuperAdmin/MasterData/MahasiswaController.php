@@ -5,7 +5,7 @@ namespace App\Http\Controllers\SuperAdmin\MasterData;
 use App\Http\Controllers\Controller;
 use App\Models\SuperAdmin\MasterData\Mahasiswa;
 use App\Models\SuperAdmin\MasterData\Syaratmagang;
-use App\Models\Superadmin\MasterData\Prodi;
+use App\Models\SuperAdmin\MasterData\Prodi;
 use App\Models\Mahasiswa\Profile;
 use App\Models\SuperAdmin\MasterData\Tahunajaran;
 use Illuminate\Http\Request;
