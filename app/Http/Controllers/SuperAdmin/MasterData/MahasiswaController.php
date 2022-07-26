@@ -59,7 +59,6 @@ class MahasiswaController extends Controller
         $mahasiswa->handleUploadFoto();
 
         $data['list_tahunajaran'] = Tahunajaran::all();
-        $data['list_prodi'] = Prodi::all();
         return redirect('superadmin/master-data/mahasiswa');
     }
 
