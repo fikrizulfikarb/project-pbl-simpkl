@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="card-body">
-            <div class="row">
+            <div class="row">hghghggh
                 <div class="col-md-5">
                     <dl class="row">
                         <dt class="col-md-4">Nama</dt>
