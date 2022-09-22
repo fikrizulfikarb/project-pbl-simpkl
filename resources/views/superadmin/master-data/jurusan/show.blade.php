@@ -11,7 +11,7 @@
                 <div class="col-md-4">
                     <dl>
                         <dt>Nama Jurusan</dt>
-                        <dl>{{ $jurusan->nama_jurusan }}</dl>             
+                        <dl>{{ $jurusan->nama_jurusan }}</dl>
                         {{-- <dt>Nama Ketua Jurusan</dt>
                         <dl>{{ $jurusan->nama_ketua_jurusan }}</dl> --}}
                         {{-- <dt>Nama Koordinator</dt>
@@ -47,7 +47,7 @@
             <hr>
             <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
-                  <thead class="bg-dark">
+                    <thead class="bg-dark">
                         <th>No</th>
                         <th width="100px">Aksi</th>
                         <th>Nama Prodi</th>
@@ -60,21 +60,20 @@
                                 <td>
                                     <div class="btn-group">
                                         <x-template.button.info-button url="superadmin/master-data/prodi"
-                                            id="{{ $prodi->id }}"/>
+                                            id="{{ $prodi->id }}" />
                                         <x-template.button.edit-button url="superadmin/master-data/prodi"
-                                            id="{{ $prodi->id }}"/>
+                                            id="{{ $prodi->id }}" />
                                         <x-template.button.delete-button url="superadmin/master-data/prodi"
-                                            id="{{ $prodi->id }}"/>
+                                            id="{{ $prodi->id }}" />
                                     </div>
                                 </td>
-                                <td>{{ $prodi->nama_prodi}}</td>
-                                <td>{{ $prodi->nama_koordinator}}</td>
+                                <td>{{ $prodi->nama_prodi }}</td>
+                                <td>{{ $prodi->nama_koordinator }}</td>
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
             </div>
-        </div>
         </div>
     </div>
 
