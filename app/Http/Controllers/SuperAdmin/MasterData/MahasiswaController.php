@@ -14,22 +14,8 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        // $data['filter_by'] = [];
-        // $list_mahasiswa = Mahasiswa::query();
-        // if(isset(request('filter') ['angkatan'] )); {
-        //     $data['filter_by'][]= 'angkatan';
-        //     $data['filter_angkatan'] = request('filter') ['angkatan'];
-        //     $list_mahasiswa = $list_mahasiswa->where ('angkatan', request('filter') ['angkatan']);
-        // }
 
-        // if(isset(request('filter') ['program_studi'] )); {
-        //     $data['filter_by'][]= 'program_studi';
-        //     $data['filter_program_studi'] = request('filter') ['program_studi'];
-        //     $list_mahasiswa = $list_mahasiswa->where ('program_studi', request('filter') ['program_studi']);
-        // }
-        
-        // $list_mahasiswa = $list_mahasiswa->get();
-        
+
         $data['list_mahasiswa'] = Mahasiswa::all();
         $data['list_tahunajaran'] = Tahunajaran::all();
         $data['list_prodi'] = Prodi::all();
@@ -92,10 +78,10 @@ class MahasiswaController extends Controller
         $mahasiswa->tanggal_lahir = request('tanggal_lahir');
         $mahasiswa->id_prodi = request('id_prodi');
         $mahasiswa->angkatan = request('angkatan');
-        if(request('password')) $mahasiswa->password = request('password');
+        if (request('password')) $mahasiswa->password = request('password');
         $mahasiswa->save();
 
-        if(request('foto')) $mahasiswa->handleUploadFoto();
+        if (request('foto')) $mahasiswa->handleUploadFoto();
 
         return redirect('superadmin/master-data/mahasiswa');
     }
@@ -106,8 +92,9 @@ class MahasiswaController extends Controller
         $mahasiswa->delete();
         return redirect('superadmin/master-data/mahasiswa');
     }
+}
 
-    // function filter()
+// function filter()
     // {
     //     $program_studi = request('program_studi');
     //     $data['list_mahasiswa'] = Mahasiswa::where('program_studi', 'like', "%$program_studi%")->get();
@@ -115,5 +102,19 @@ class MahasiswaController extends Controller
 
     //     return view('superadmin.master-data.mahasiswa.index', $data);
     // }
-}
 
+// $data['filter_by'] = [];
+        // $list_mahasiswa = Mahasiswa::query();
+        // if(isset(request('filter') ['angkatan'] )); {
+        //     $data['filter_by'][]= 'angkatan';
+        //     $data['filter_angkatan'] = request('filter') ['angkatan'];
+        //     $list_mahasiswa = $list_mahasiswa->where ('angkatan', request('filter') ['angkatan']);
+        // }
+
+        // if(isset(request('filter') ['program_studi'] )); {
+        //     $data['filter_by'][]= 'program_studi';
+        //     $data['filter_program_studi'] = request('filter') ['program_studi'];
+        //     $list_mahasiswa = $list_mahasiswa->where ('program_studi', request('filter') ['program_studi']);
+        // }
+        
+        // $list_mahasiswa = $list_mahasiswa->get();
