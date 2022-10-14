@@ -4,14 +4,14 @@ namespace App\Http\Controllers\SuperAdmin\MasterData;
 
 use App\Http\Controllers\Controller;
 use App\Models\SuperAdmin\MasterData\Pegawai;
-use App\Models\Superadmin\MasterData\Prodi;
+use App\Models\SuperAdmin\MasterData\Prodi;
 use App\Models\SuperAdmin\MasterData\Role;
 
 class PegawaiController extends Controller
 {
     public function index()
     {
-        $data['list_pegawai'] = Pegawai::all(); 
+        $data['list_pegawai'] = Pegawai::all();
         return view('superadmin.master-data.pegawai.index', $data);
     }
 
@@ -46,7 +46,7 @@ class PegawaiController extends Controller
     public function edit(Pegawai $pegawai)
     {
         $data['pegawai'] = $pegawai;
-        $data['list_prodi'] = Prodi::all(); 
+        $data['list_prodi'] = Prodi::all();
         return view('superadmin.master-data.pegawai.edit', ['list_prodi' => Prodi::all()], $data);
         // return view('superadmin.master-data.pegawai.edit')->with('sucsses', 'Data Berhasil Di Edit');
     }
@@ -58,10 +58,10 @@ class PegawaiController extends Controller
         $pegawai->username = request('username');
         $pegawai->id_prodi = request('id_prodi');
         $pegawai->email = request('email');
-        if(request('password')) $pegawai->password = request('password');
+        if (request('password')) $pegawai->password = request('password');
         $pegawai->save();
-        
-        if(request('foto')) $pegawai->handleUploadFoto();
+
+        if (request('foto')) $pegawai->handleUploadFoto();
 
         return redirect('superadmin/master-data/pegawai');
     }
@@ -69,8 +69,8 @@ class PegawaiController extends Controller
     public function destroy(Pegawai $pegawai)
     {
         $list_role = Role::where('id_pegawai', $pegawai->id)->get();
-        if($list_role->count() > 0){
-            $list_role->each(function($role){
+        if ($list_role->count() > 0) {
+            $list_role->each(function ($role) {
                 $role->delete();
             });
         }
@@ -78,7 +78,4 @@ class PegawaiController extends Controller
         $pegawai->delete();
         return redirect('superadmin/master-data/pegawai');
     }
-
-    
-
 }
